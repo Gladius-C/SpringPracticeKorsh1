@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+</head>
+<body>
+<h1>Введите числа и знак действия</h1>
+<h2>Результат вычисления будет выведен туда, где было первое число</h2>
+<form>
+
+    <input type="number" name="firstnumber" required placeholder="первое число" th:value="${temp}">
+    <br>
+    <input type="text" name="action" required placeholder="Знак действия">
+    <br>
+    <input type="number" name="secondnumber" required placeholder="второе число">
+    <br>
+    <input type="submit" value="Отправить GET" formaction="/calculator" formmethod="get">
+    <input type="submit" value="Отправить POST" formaction="/calculator" formmethod="post">
+
+</form>
+</body>
+</html>
